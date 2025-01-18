@@ -11,6 +11,7 @@ import Vehicle from "./pages/vehicle.tsx";
 import CropLogs from "./pages/cropLogs.tsx";
 import EquipmentManager from "./pages/equipment.tsx";
 import Profile from "./pages/profile.tsx";
+import Logout from "./pages/logout.tsx";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Route path="/logs" element={<CropLogs/>} />
             <Route path="/equipment" element={<EquipmentManager/>} />
             <Route path="/profile" element={<Profile/>} />
+            <Route path="/logout" element={<Logout/>}/>
             <Route path="*" element={<Notfound/>} />
         </Routes>
         <Footer />
